@@ -1,0 +1,109 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #36393E;
+  color: #ffffffbd;
+  font-family: 'Georama', sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+main {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  min-height: 550px;
+}
+
+.calculator {
+  box-sizing: border-box;
+  width: 450px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #231a36;
+}
+
+.viewer {
+  padding: 10px 20px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: #8c94ec;
+  text-align: right;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.viewer-history {
+  min-height: 32px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.815);
+}
+
+.viewer-current {
+  min-height: 64px;
+  font-size: 40px;
+  color:black;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-top: 10px;
+}
+
+.subgrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+.btn {
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #ffffffbd;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: #ffffff94;
+}
+
+.btn-dot {
+  grid-column: span 2;
+}
+
+.btn-zero {
+  grid-column: span 2;
+}
+
+.btn-eq {
+  background-color: #faa;
+}
+
+.btn-eq:hover {
+  background-color: #ED4245;
+}
